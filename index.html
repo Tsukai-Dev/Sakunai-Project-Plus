@@ -1,0 +1,112 @@
+<!-- ©️2023 Myu Studio
+Witaj! z tej strony twórca tej strony czyli Ayaa :)
+Jeśli jesteś tu bo ja ci powiedziałam to git
+Jeśli jesteś tu bo chcesz ukraść moją prace to jest mi przykro :c
+Nie kradnij mojej pracy 
+wiesz...
+rozwijam tą strone od 2018 roku to trochę nie miłe tak kraść 5 lat pracy
+Poczekaj do 2024 jak strona straci wsparcie udostępnie jej kod <3
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="style2.css">
+  <title>Sakunai :: Player</title>
+</head>
+<body onload="startTime()">
+  <style>
+    body {
+      background-color: #EFD3E7;
+      color: black;
+    }
+    
+    .dark-mode {
+      background-color: rgb(56, 56, 56);
+      color: white;
+    }
+    .dark-mode #container {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+
+  width: 320px;
+  border-radius: 24px;
+  margin: 0px;
+  margin-top: -50px;
+  padding: 0px;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  transition: 0.4s;
+  font-size: 0.8em;
+  border: 2px solid #ffffff;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+  
+    </style>
+  <!-- Góra strony -->
+  <input type="file" id="thefile" accept="audio/*" /><br>
+  <br>
+  <div class="navbut"><a href="Menu.html"><button style="width: 80px;"><span class="material-symbols-outlined">lists</span></button></a><div class="blank"></div><a href="zmiany.html"><button style="width: 80px;"><span class="material-symbols-outlined">deployed_code_update</span></button></a></div><div class="blank"></div><button style="width: 80px;" onclick="dark()"><span class="material-symbols-outlined">dark_mode</span></button></div>
+  <center><h1 style="margin-top: -140px;">Sakunai Project Plus<h4 style="margin-top: -20px; margin-left: -325px; margin-bottom: 65px;"><i>#Dare to listen!</i></h4></h1></center>
+  <br>
+  <!-- Początek odtwarzacza -->
+  <center><div id="container">
+    <audio id="audio">
+      <source id="sourceMP3" src="" type="audio/ogg">
+    </audio>
+    <!-- Informacje o utworze -->
+    <div id="wrapper">
+      <div id="trackInfo" style="text-align: left;">
+        <div id="artistAlbum"></div>
+        <b><div id="titleText">Brak Utworu
+          </div></b>
+      </div>
+      <!-- Suwak czasu -->
+      <div id="timeInfo">
+        <div><div id="timeBar"><div class="filler"></div></div></div>
+        <b><center><div id="timeText"></div></center></b>
+      </div>
+      <br>
+      <!-- Przyciski -->
+      <div id="controls">
+        <div class="button" id="previousBtn"><img src="icons/32/rewind-32.png"></div>
+        <div class="blank"></div>
+        <div class="button" id="playBtn"><img src="icons/32/play-32.png"></div>
+        <div class="blank"></div>
+        <div class="button" id="nextBtn"><img src="icons/32/forward-32.png"></div>
+      </div>
+
+    </div>
+
+
+    
+      
+<!-- Łączenie odtwarzacza z Onyx kernel 3 -->
+<script src = './/switcher.js'></script>
+
+
+<script src="scripts/sliderfy.js"></script>
+<script src="scripts/playlist.js"></script>
+<script src="scripts/controls.js"></script>
+  </div>
+  <!-- Koniec odtwarzacza -->
+  <br>
+  <br>
+  <center><div class="footer">
+    <div id="txt"></div>
+    <footer>©️Lyano 2019-2023</footer>
+  </div></center>
+</body>
+</html>

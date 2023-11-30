@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<! -- Bread Player 2022 | Made By Aerow |  DevOnly Version 2 | Coming Soon... -->
+<html>
+<head>
+  <title>Bread Player</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Dev.css">
+</head>
+<body>
+  <center><h1>Bread Player Beta 5</h1>
+  <a href="ThemeSelector.html"><button>Wybór Motywu</button></a></center>
+  <br>
+  <br>
+  <center><div id = "container">
+  
+    <audio id="audio">
+      <source id="sourceMP3" src="" type="audio/ogg">
+    </audio>
+      
+    <div id = "wrapper">
+      <div id="trackInfo">
+       <b> <div id="titleText">Coś Poszło nie tak... (404)</div></b>
+       <b> <div id="artistText">Coś Poszło nie tak... (404)</div></b>
+        <div id="albumText">Coś Poszło nie tak... (404)</div>
+      </div>
+      <br>
+      
+      <div id="controls">
+        <div class="button" id="playBtn"><img src="icons/32/play-32.png"></div>
+        <div class="blank"></div>
+        <div class="button" id="previousBtn"><img src="icons/32/rewind-32.png"></div>
+        <div class="blank"></div>
+        <div class="button" id="nextBtn"><img src="icons/32/forward-32.png"></div>
+        <div class="blank"></div>
+        <div id="volumeIcon"><img src="icons/32/volume-32.png"></div> 
+        <div><div id="volumeSlider"><div class="filler"></div></div></div>
+      </div>
+      <br>
+      <div id="timeInfo">
+        <div><div id="timeBar"><div class="filler"></div></div></div><br>
+        <b><center><div id="timeText"></div></center></b>
+      </div>
+      
+      <br>
+      <center><footer>©Designed by Aerow</footer></center>
+      <center>  <footer>2017 - 2022</footer></center>
+  </div></center>
+  <center>
+    <h3>Playlista Obecnie:</h3>
+  <h4>Capital Cities - Safe And Sound</h4>
+  <h4>Avicii - Waiting For Love</h4>
+  <h4>Smith & Thell - Hotel Walls</h4>
+  <h4>David Guetta, Sam Martin - Lovers on the Sun (feat. Sam Martin)</h4></center>
+
+  <div class = 'main'>
+    <div class = 'color-div' id = 'grey' onclick = 'grey()'></div>
+    <div class = 'color-div' id = 'white' onclick = 'white()'></div>
+    <div class = 'color-div' id = 'blue' onclick = 'blue()'></div>
+    <div class = 'color-div' id = 'yellow' onclick = 'yellow()'></div>
+    <div class = 'color-div' id = 'black' onclick = 'black()'></div>
+</div>
+<br />
+<p class = 'text'>Nowość!
+    Spróbuj Spersonalizować Swoje Doświadczenia z Bread Playerem!</p>
+    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center><div class="Counter">
+          <h1 id="headline">Zakończenie wsparcia Windowsa 8.1:</h1>
+          <div id="countdown">
+            <ul>
+              <li><span id="days"></span>Dni</li>
+              <li><span id="hours"></span>Godziny</li>
+              <li><span id="minutes"></span>Minuty</li>
+              <li><span id="seconds"></span>Sekundy</li>
+            </ul>
+          </div>
+          <div class="message">
+            <div id="content">
+              <span class="emoji"><img draggable="false" role="img" class="emoji" alt="🥳" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f973.svg"></span>
+              <span class="emoji"><img draggable="false" role="img" class="emoji" alt="🎉" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f389.svg"></span>
+              <span class="emoji"><img draggable="false" role="img" class="emoji" alt="🎂" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f382.svg"></span>
+            </div>
+          </div>
+        </div></center>
+
+        <script>
+          (function () {
+            const second = 1000,
+              minute = second * 60,
+              hour = minute * 60,
+              day = hour * 24;
+           
+            let birthday = "Jan 10, 2023 00:00:00",
+              countDown = new Date(birthday).getTime(),
+              x = setInterval(function () {
+                let now = new Date().getTime(),
+                  distance = countDown - now;
+           
+                (document.getElementById("days").innerText = Math.floor(distance / day)),
+                  (document.getElementById("hours").innerText = Math.floor(
+                    (distance % day) / hour
+                  )),
+                  (document.getElementById("minutes").innerText = Math.floor(
+                    (distance % hour) / minute
+                  )),
+                  (document.getElementById("seconds").innerText = Math.floor(
+                    (distance % minute) / second
+                  ));
+           
+                //do something later when date is reached
+                if (distance < 0) {
+                  let headline = document.getElementById("headline"),
+                    countdown = document.getElementById("countdown"),
+                    content = document.getElementById("content");
+           
+                  headline.innerText = "It's my birthday!";
+                  countdown.style.display = "none";
+                  content.style.display = "block";
+           
+                  clearInterval(x);
+                }
+                //seconds
+              }, 0);
+          })();
+           
+          </script>
+<script src = './/switcherDev.js'></script>
+
+
+  <script src="scripts/sliderfy.js"></script>
+  <script src="scripts/playlist.js"></script>
+  <script src="scripts/controls.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+body{
+    background-color: black;
+    color: #7D221D;
+    font-family: 'Finger Paint', cursive;
+  }
+  
+  
+  
+  
+  #container {
+    background-color: black;
+    width: 320px;
+    border-radius: 14px;
+    margin: 0px;
+    padding: 0px;
+    color: #7D221D;
+    font-family: 'Finger Paint', cursive;
+    font-size: 0.8em;
+    box-shadow: 20px 20px 60px #7D221D,
+    -20px -20px 60px #7D221D;
+    border:2px solid #7D221D;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  div {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  
+  #wrapper {
+    padding: 10px;
+    position: relative;
+  }
+  
+  #controls div, #timeInfo div {
+    display: table-cell;
+    vertical-align:middle;
+    position: relative;
+  }
+  
+  #volumeSlider {
+    width:70px;
+    height:10px;
+    background-color: #DBDBDB;
+    position: relative;
+    border: 0px;
+    border-radius: 5px;
+  }
+  
+  #volumeSlider div {
+    height:inherit;
+    position: relative;
+    border: 0px;
+    border-radius: 5px;
+  }
+  
+  #timeInfo {
+    margin: 5px 0px;
+    position: relative;
+  } 
+  
+  #timeBar {
+    width:280px;
+    height:20px;
+    cursor: pointer;
+    background-color: #DBDBDB;
+    border: 0px;
+    border-radius: 5px;
+  }
+  
+  #timeBar div {
+    height:inherit;
+    position: relative;
+    border: 0px;
+    border-radius: 5px;
+  }
+  
+  #volumeIcon{
+    padding-left: 20px;
+    padding-right: 10px;
+    position: relative;
+  }
+  
+  .filler {
+    width: inherit;
+    background-color: #7D221D;
+    position: relative;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+  }
+  
+  .button {
+    background-color: #7D221D;
+    padding: 4px;
+    border-radius: 14px;
+    transition: 0.4s;
+    padding: 15px 15px;
+    width:52px;
+    height:32px;
+    cursor: pointer;
+    position: relative;
+  }
+  .button:hover{
+    border-radius: 10px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  .button img {
+    width:20px;
+    margin-left: 1px;
+    margin-top:4px;
+  }
+  
+  .blank{
+    padding: 5px;
+  }
+  
+  .volumeAlign {
+    padding-bottom: 15px;
+  }
+  
+  
+  button{
+    padding: 15px 15px;
+    background-color: black;
+    color: #7D221D;
+    border-color: white;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: 'Finger Paint', cursive;;
+  }
+  
+  button:hover{
+    background-color: #7D221D;
+    color: white;
+  }
